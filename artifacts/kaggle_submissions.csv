@@ -1,0 +1,4 @@
+ref,fileName,date,description,status,publicScore,privateScore
+57569698,als.csv,2026-10-23 18:43:03.007000,"Шиншинова Ольга (shinshinova) — implicit ALS, 128 factors, reg 5, alpha 0.5",SubmissionStatus.COMPLETE,0.39486,0.38450
+57569695,ppr.csv,2026-10-23 18:42:59.413000,"Шиншинова Ольга (shinshinova) — Personalized PageRank, co-view graph, alpha 0.5, count weights",SubmissionStatus.COMPLETE,0.41947,0.40882
+57569691,popularity.csv,2026-10-23 18:42:55.663000,"Шиншинова Ольга (shinshinova) — popularity baseline (distinct full-watch users, weeks 11-30), pool = airing in weeks 31-42",SubmissionStatus.COMPLETE,0.30258,0.29969

@@ -1,0 +1,35 @@
+{
+ "views": 5821987,
+ "segments": 5441773,
+ "airings_total": 3444006,
+ "airings_labelled": 381892,
+ "labelled_share": 0.11088598568062889,
+ "user_airing_pairs": 3014129,
+ "pairs_frac_ge_0_8": 611760,
+ "frac_quantiles": {
+  "0.25": 0.043666666666666666,
+  "0.5": 0.195,
+  "0.75": 0.6566666666666666,
+  "0.9": 1.0
+ },
+ "users_with_any_labelled_pair": 4895,
+ "weeks_11_20": {
+  "users_with_full_watch": 4737,
+  "users_strict_top5": 4349,
+  "test_users_strict_top5": 1197,
+  "programmes_full_watched": 2499
+ },
+ "weeks_21_30": {
+  "users_with_full_watch": 4643,
+  "users_strict_top5": 4030,
+  "test_users_strict_top5": 1150,
+  "programmes_full_watched": 2851
+ },
+ "weeks_11_30": {
+  "users_with_full_watch": 4841,
+  "users_strict_top5": 4633,
+  "test_users_strict_top5": 1241,
+  "programmes_full_watched": 3866
+ },
+ "runtime_s": 4.0
+}
