@@ -122,3 +122,27 @@ def to_top5(scores: np.ndarray, snap: Snapshot, users: list[int] | None = None) 
                 chosen.append(int(j))
         out[u] = [int(snap.items[j]) for j in chosen]
     return out
+
+
+def top_n_ranks(scores: np.ndarray, snap: Snapshot, n: int = 50) -> np.ndarray:
+    """0-based rank of each pool item among the user's top-n positive scores; inf outside the top-n."""
+    masked = np.where(snap.pool_mask, scores, -np.inf)
+    top = np.argpartition(-masked, n, axis=1)[:, :n]
+    top_scores = np.take_along_axis(masked, top, axis=1)
+    order = np.argsort(-top_scores, axis=1, kind="stable")
+    top = np.take_along_axis(top, order, axis=1)
+    top_scores = np.take_along_axis(top_scores, order, axis=1)
+    ranks = np.full(scores.shape, np.inf, dtype=np.float32)
+    rows = np.repeat(np.arange(len(scores)), n)
+    rank_values = np.where(top_scores > 0, np.tile(np.arange(n), (len(scores), 1)), np.inf).ravel()
+    ranks[rows, top.ravel()] = rank_values
+    return ranks
+
+
+def rank_fusion_scores(ranks: dict[str, np.ndarray], weights: dict[str, float], k: float = 10.0) -> np.ndarray:
+    """Weighted reciprocal rank fusion: sum over methods of w / (k + rank + 1)."""
+    out = np.zeros(next(iter(ranks.values())).shape, dtype=np.float32)
+    for name, w in weights.items():
+        if w > 0:
+            out += w / (k + ranks[name] + 1.0)
+    return out

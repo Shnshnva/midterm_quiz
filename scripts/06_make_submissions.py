@@ -21,6 +21,15 @@ METHODS: dict[str, Callable[[Snapshot], np.ndarray]] = {
     "habit_schedule": lambda s: rec.habit_schedule_scores(s, prior=100.0),
     "ppr": lambda s: rec.ppr_scores(s, alpha=0.5, weighting="count"),
     "als": lambda s: rec.als_scores(s, factors=128, regularization=5.0, alpha=0.5),
+    "fusion": lambda s: rec.rank_fusion_scores(
+        {
+            "habit_schedule": rec.top_n_ranks(rec.habit_schedule_scores(s, prior=100.0), s),
+            "ppr": rec.top_n_ranks(rec.ppr_scores(s, alpha=0.5, weighting="count"), s),
+            "als": rec.top_n_ranks(rec.als_scores(s, factors=128, regularization=5.0, alpha=0.5), s),
+        },
+        {"habit_schedule": 2.0, "ppr": 1.0, "als": 0.5},
+        k=20.0,
+    ),
 }
 
 

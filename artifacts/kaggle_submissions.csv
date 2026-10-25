@@ -1,4 +1,6 @@
 ref,fileName,date,description,status,publicScore,privateScore
+57621475,ranker_v1.csv,2026-10-25 07:29:55.650000,"Шиншинова Ольга (shinshinova) — LightGBM lambdarank re-ranker v1: habit, habit x schedule, PPR, ALS, popularity candidates + slot-habit features, 3 seeds",SubmissionStatus.COMPLETE,0.44867,0.43773
+57621250,fusion.csv,2026-10-25 07:21:49.130000,"Шиншинова Ольга (shinshinova) — rank fusion: habit x schedule 2, PPR 1, ALS 0.5, k=20",SubmissionStatus.COMPLETE,0.42654,0.41555
 57569698,als.csv,2026-10-23 18:43:03.007000,"Шиншинова Ольга (shinshinova) — implicit ALS, 128 factors, reg 5, alpha 0.5",SubmissionStatus.COMPLETE,0.39486,0.38450
 57569695,ppr.csv,2026-10-23 18:42:59.413000,"Шиншинова Ольга (shinshinova) — Personalized PageRank, co-view graph, alpha 0.5, count weights",SubmissionStatus.COMPLETE,0.41947,0.40882
 57569691,popularity.csv,2026-10-23 18:42:55.663000,"Шиншинова Ольга (shinshinova) — popularity baseline (distinct full-watch users, weeks 11-30), pool = airing in weeks 31-42",SubmissionStatus.COMPLETE,0.30258,0.29969

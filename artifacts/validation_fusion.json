@@ -1,0 +1,1414 @@
+{
+ "rows": [
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.3339660876757651,
+   "map5_test_users": 0.37061449275362324
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.3339172870140612,
+   "map5_test_users": 0.3701797101449275
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.33375516956162116,
+   "map5_test_users": 0.36985507246376814
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.33375516956162116,
+   "map5_test_users": 0.36985507246376814
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.3337535153019024,
+   "map5_test_users": 0.3703739130434783
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.333741935483871,
+   "map5_test_users": 0.3715478260869565
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.3337402812241522,
+   "map5_test_users": 0.369504347826087
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.3337402812241522,
+   "map5_test_users": 0.369504347826087
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.3337138130686518,
+   "map5_test_users": 0.36962028985507245
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.33356492969396195,
+   "map5_test_users": 0.37054202898550725
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.33347229114971055,
+   "map5_test_users": 0.36926086956521736
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.3334433416046319,
+   "map5_test_users": 0.3702434782608696
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.3334433416046319,
+   "map5_test_users": 0.3702434782608696
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.33336724565756826,
+   "map5_test_users": 0.3702956521739131
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.33316377171215883,
+   "map5_test_users": 0.36841159420289854
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.33316377171215883,
+   "map5_test_users": 0.36841159420289854
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.3330785773366419,
+   "map5_test_users": 0.36827246376811595
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.33307196029776676,
+   "map5_test_users": 0.36936811594202895
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.3329247311827957,
+   "map5_test_users": 0.36937971014492754
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.3329247311827957,
+   "map5_test_users": 0.36937971014492754
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.3329247311827957,
+   "map5_test_users": 0.36937971014492754
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.33282051282051284,
+   "map5_test_users": 0.3678753623188406
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.33282051282051284,
+   "map5_test_users": 0.3678753623188406
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.3327799834574028,
+   "map5_test_users": 0.3690579710144928
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.33266004962779155,
+   "map5_test_users": 0.3692463768115942
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.33266004962779155,
+   "map5_test_users": 0.3692463768115942
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.33266004962779155,
+   "map5_test_users": 0.3692463768115942
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.33258560794044667,
+   "map5_test_users": 0.3711913043478261
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.33258560794044667,
+   "map5_test_users": 0.3711913043478261
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.33256492969396195,
+   "map5_test_users": 0.36751304347826086
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.33256492969396195,
+   "map5_test_users": 0.36751304347826086
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.33255417700578993,
+   "map5_test_users": 0.3708492753623189
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.33255417700578993,
+   "map5_test_users": 0.3708492753623189
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.33251695616211746,
+   "map5_test_users": 0.36926086956521736
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.33251695616211746,
+   "map5_test_users": 0.36926086956521736
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.33249545078577336,
+   "map5_test_users": 0.367263768115942
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.33236228287841185,
+   "map5_test_users": 0.36869275362318843
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.33236228287841185,
+   "map5_test_users": 0.36869275362318843
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.33232506203473944,
+   "map5_test_users": 0.3693536231884058
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.33210339123242344,
+   "map5_test_users": 0.3705159420289855
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.33210339123242344,
+   "map5_test_users": 0.3705159420289855
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.3320727874276261,
+   "map5_test_users": 0.3673536231884058
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.33196774193548384,
+   "map5_test_users": 0.36922898550724637
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.33196774193548384,
+   "map5_test_users": 0.36922898550724637
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.33196774193548384,
+   "map5_test_users": 0.36922898550724637
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.3319421009098428,
+   "map5_test_users": 0.3686057971014493
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.3316914805624483,
+   "map5_test_users": 0.3686434782608696
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.3315765095119934,
+   "map5_test_users": 0.3676289855072464
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.3315765095119934,
+   "map5_test_users": 0.3676289855072464
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.3315004135649297,
+   "map5_test_users": 0.3674
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.3313473945409429,
+   "map5_test_users": 0.3685507246376812
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.3312828784119107,
+   "map5_test_users": 0.366504347826087
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.33118279569892467,
+   "map5_test_users": 0.36648985507246373
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.3311736972704714,
+   "map5_test_users": 0.3655507246376812
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.3311736972704714,
+   "map5_test_users": 0.3655507246376812
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.33107196029776675,
+   "map5_test_users": 0.3655478260869565
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.33107196029776675,
+   "map5_test_users": 0.3655478260869565
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.3309801488833747,
+   "map5_test_users": 0.366168115942029
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.33076261373035565,
+   "map5_test_users": 0.36823188405797097
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.33076261373035565,
+   "map5_test_users": 0.36823188405797097
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.33076261373035565,
+   "map5_test_users": 0.36823188405797097
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.33076261373035565,
+   "map5_test_users": 0.36823188405797097
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.33076261373035565,
+   "map5_test_users": 0.36823188405797097
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.33076261373035565,
+   "map5_test_users": 0.36823188405797097
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.33076261373035565,
+   "map5_test_users": 0.36823188405797097
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.33076261373035565,
+   "map5_test_users": 0.36823188405797097
+  },
+  {
+   "weights": {
+    "habit_schedule": 2,
+    "ppr": 0,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.33076261373035565,
+   "map5_test_users": 0.36823188405797097
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.33050620347394544,
+   "map5_test_users": 0.36451014492753625
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.33050620347394544,
+   "map5_test_users": 0.36451014492753625
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.3300686517783292,
+   "map5_test_users": 0.36522608695652176
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.3300132340777502,
+   "map5_test_users": 0.3665768115942029
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.3300132340777502,
+   "map5_test_users": 0.3665768115942029
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.3299933829611249,
+   "map5_test_users": 0.36464927536231884
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.3297692307692307,
+   "map5_test_users": 0.36660000000000004
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.3297692307692307,
+   "map5_test_users": 0.36660000000000004
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.3296889991728701,
+   "map5_test_users": 0.3654985507246377
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.3296889991728701,
+   "map5_test_users": 0.3654985507246377
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.3296873449131513,
+   "map5_test_users": 0.36482028985507253
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.3296873449131513,
+   "map5_test_users": 0.36482028985507253
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.3295384615384615,
+   "map5_test_users": 0.3649768115942029
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.3295384615384615,
+   "map5_test_users": 0.3649768115942029
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.32932423490488005,
+   "map5_test_users": 0.3652811594202898
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.32923407775020674,
+   "map5_test_users": 0.3659536231884058
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.32923407775020674,
+   "map5_test_users": 0.3659536231884058
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.32902481389578164,
+   "map5_test_users": 0.36310724637681163
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.32902481389578164,
+   "map5_test_users": 0.36310724637681163
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.3288296112489661,
+   "map5_test_users": 0.36297971014492747
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.3288296112489661,
+   "map5_test_users": 0.36297971014492747
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.32842183622828786,
+   "map5_test_users": 0.3632927536231884
+  },
+  {
+   "weights": {
+    "habit_schedule": 1,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.32842183622828786,
+   "map5_test_users": 0.3632927536231884
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.3274574028122415,
+   "map5_test_users": 0.36176521739130435
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.32709181141439203,
+   "map5_test_users": 0.3634782608695652
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.32699503722084367,
+   "map5_test_users": 0.36135072463768114
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.3268271298593879,
+   "map5_test_users": 0.3631797101449275
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.32640942928039696,
+   "map5_test_users": 0.36160289855072464
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.3262456575682382,
+   "map5_test_users": 0.3613797101449276
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.326136476426799,
+   "map5_test_users": 0.3623014492753623
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.3261182795698925,
+   "map5_test_users": 0.35987246376811594
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.32595533498759305,
+   "map5_test_users": 0.3599768115942029
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.3259280397022333,
+   "map5_test_users": 0.35881159420289854
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.32590736145574856,
+   "map5_test_users": 0.3595188405797102
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.32578081058726216,
+   "map5_test_users": 0.3628985507246377
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.3255980148883375,
+   "map5_test_users": 0.35812173913043477
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.32534739454094297,
+   "map5_test_users": 0.3581536231884058
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.32484284532671626,
+   "map5_test_users": 0.35748115942028985
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.3240545905707196,
+   "map5_test_users": 0.35886376811594206
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.3240521091811414,
+   "map5_test_users": 0.35900869565217386
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 2,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.32393300248138956,
+   "map5_test_users": 0.359263768115942
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.32316046319272124,
+   "map5_test_users": 0.3590434782608695
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.32316046319272124,
+   "map5_test_users": 0.3590434782608695
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0.5,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.32316046319272124,
+   "map5_test_users": 0.3590434782608695
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.32316046319272124,
+   "map5_test_users": 0.3590434782608695
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.32316046319272124,
+   "map5_test_users": 0.3590434782608695
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 1,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.32316046319272124,
+   "map5_test_users": 0.3590434782608695
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 5.0,
+   "map5_all": 0.32316046319272124,
+   "map5_test_users": 0.3590434782608695
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 20.0,
+   "map5_all": 0.32316046319272124,
+   "map5_test_users": 0.3590434782608695
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 2,
+    "als": 0
+   },
+   "k": 60.0,
+   "map5_all": 0.32316046319272124,
+   "map5_test_users": 0.3590434782608695
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.3225442514474773,
+   "map5_test_users": 0.3562
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.3225442514474773,
+   "map5_test_users": 0.3562
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.32236145574855257,
+   "map5_test_users": 0.3525362318840579
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.32200578990901574,
+   "map5_test_users": 0.35231304347826087
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.32181389578163766,
+   "map5_test_users": 0.3548144927536232
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.32181389578163766,
+   "map5_test_users": 0.3548144927536232
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 1,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.32151861042183627,
+   "map5_test_users": 0.35443188405797105
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 2,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.32151861042183627,
+   "map5_test_users": 0.35443188405797105
+  },
+  {
+   "weights": {
+    "habit_schedule": 0.5,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.32039950372208437,
+   "map5_test_users": 0.3503217391304348
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.31763110008271295,
+   "map5_test_users": 0.34988115942028986
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.31763110008271295,
+   "map5_test_users": 0.34988115942028986
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.3175822994210091,
+   "map5_test_users": 0.3502666666666666
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.3175822994210091,
+   "map5_test_users": 0.3502666666666666
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0.5,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.317505376344086,
+   "map5_test_users": 0.3499333333333333
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 1,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.317505376344086,
+   "map5_test_users": 0.3499333333333333
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.3104168734491315,
+   "map5_test_users": 0.34014202898550727
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.310343258891646,
+   "map5_test_users": 0.3399710144927536
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0.5,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.3100926385442514,
+   "map5_test_users": 0.33993913043478263
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 5.0,
+   "map5_all": 0.30290239867659224,
+   "map5_test_users": 0.33084057971014497
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 20.0,
+   "map5_all": 0.30290239867659224,
+   "map5_test_users": 0.33084057971014497
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0,
+    "als": 0.5
+   },
+   "k": 60.0,
+   "map5_all": 0.30290239867659224,
+   "map5_test_users": 0.33084057971014497
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 5.0,
+   "map5_all": 0.30290239867659224,
+   "map5_test_users": 0.33084057971014497
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 20.0,
+   "map5_all": 0.30290239867659224,
+   "map5_test_users": 0.33084057971014497
+  },
+  {
+   "weights": {
+    "habit_schedule": 0,
+    "ppr": 0,
+    "als": 1
+   },
+   "k": 60.0,
+   "map5_all": 0.30290239867659224,
+   "map5_test_users": 0.33084057971014497
+  }
+ ]
+}

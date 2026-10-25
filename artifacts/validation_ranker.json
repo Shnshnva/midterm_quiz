@@ -1,0 +1,63 @@
+{
+ "map5_all": 0.3536542597187758,
+ "map5_test_users": 0.39089855072463764,
+ "candidate_recall": 0.7148,
+ "windows": [
+  [
+   14,
+   20
+  ],
+  [
+   16,
+   20
+  ]
+ ],
+ "params": {
+  "objective": "lambdarank",
+  "metric": "map",
+  "eval_at": [
+   5
+  ],
+  "learning_rate": 0.05,
+  "num_leaves": 63,
+  "min_child_samples": 50,
+  "feature_fraction": 0.8,
+  "bagging_fraction": 0.8,
+  "bagging_freq": 1,
+  "lambda_l2": 1.0,
+  "verbose": -1,
+  "num_threads": 8
+ },
+ "rounds": 300,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "importance_gain": {
+  "ppr_rank": 244651.2,
+  "ppr": 190532.4,
+  "slot_habit": 30262.0,
+  "user_full_watches": 23144.7,
+  "als_rank": 20871.4,
+  "window_airings": 20487.6,
+  "popularity": 18713.7,
+  "slot_habit_4w": 18623.0,
+  "airings_touched": 14097.9,
+  "channel_share": 11470.4,
+  "partial_seconds": 10118.0,
+  "history_airings": 8765.4,
+  "habit_schedule_rank": 7630.5,
+  "als": 4547.7,
+  "slot_habit_per_airing": 4443.2,
+  "user_programmes": 4274.3,
+  "slot_habit_4w_per_airing": 4042.5,
+  "weeks_since_full_watch": 3242.1,
+  "habit_share": 2466.7,
+  "habit_schedule": 2383.6,
+  "habit_rank": 1094.9,
+  "full_watches_last_2w": 770.1,
+  "habit": 543.9
+ },
+ "runtime_s": 51.7
+}
