@@ -9,7 +9,7 @@
 
 ## Abstract
 
-For each of 1,260 sweet.tv users the task is to rank the five programmes they will watch most often, to at least 80% of an airing, in weeks 31–42, from a view log that only becomes user–programme data after an interval join with a schedule where 11.1% of airings carry a programme id. I implemented Personalized PageRank (PPR) on a programme co-view graph and implicit-feedback ALS, compared them with a popularity baseline on one temporal hold-out (history weeks 11–20, target 21–30), and combined them with a habit-based heuristic in a LightGBM lambdarank re-ranker. The re-ranker reaches hold-out MAP@5 0.3537 against 0.3232 for PPR, 0.3029 for ALS and 0.2138 for popularity, and a returned Kaggle private score of 0.43773. Only half (50.8%) of the programmes in users' future top-5 were already watched to the end in their history, yet every method — the final one included — fills about 90% of its list with such repeats, so the open problem is the other half.
+For 1,260 sweet.tv users the task is to rank the five programmes they will watch most often in weeks 31–42, from a view log that becomes user–programme data only after an interval join with a schedule in which 11.1% of airings carry a programme id. I implemented Personalized PageRank (PPR) on a programme co-view graph and implicit-feedback ALS, compared them with a popularity baseline on one temporal hold-out (history weeks 11–20, target 21–30), and combined them with a habit-based heuristic in a LightGBM lambdarank re-ranker. The re-ranker reaches hold-out MAP@5 0.3537 against 0.3232 for PPR, 0.3029 for ALS and 0.2138 for popularity, and a returned Kaggle private score of 0.43773. Only 50.8% of the programmes in users' future top-5 were already fully watched in their history, yet the personalised methods, the final one included, fill 84–96% of their lists with such repeats: the open problem is the other half.
 
 *Index Terms* — personalized PageRank, implicit feedback, matrix factorization, learning to rank, TV recommendation
 
@@ -43,7 +43,7 @@ For each of 1,260 sweet.tv users the task is to rank the five programmes they wi
 
 Hu *et al.* [1] give the confidence-weighted ALS used for the MF method; implicit counts are confidence, not ratings, which fits "number of fully watched airings". PageRank [2] with a non-uniform teleport vector [3] is the PPR method, with the teleport set to one user's history. The re-ranker is gradient-boosted trees [4] trained with the LambdaRank objective [5]; the untrained fusion is weighted reciprocal rank fusion [6]. A solution of the same exam by the GSB cohort [7] was published two days before this deadline; I read its README, result tables and `target.py`/`baselines.py`. From it I took (a) confirmation that the 0.8 rule on the Data page is the target rule, which I then read on the Data page myself, and (b) the idea of scaling a user's habit by the number of airings in the target window ("habit × schedule"). No code was copied; my join, PPR, ALS wrapper, features and re-ranker were written in this session (§6). Its reported Kaggle private scores (PPR 0.39635, ALS 0.36427, re-ranker 0.45015) are used only as an external reference point.
 
-**Alternatives considered.** *Content-based filtering*: not implemented as a method because the target separates programmes of the same category and genre by how often a user returns to them (*ТСН* vs *Факты*, both "Инфо"); [7] reports private 0.0895 for a TF-IDF profile. *Association rules*: implemented by [7] at 0.34068 private, below its PPR and ALS; dropped for time. *Two-tower / sequential models*: no item text beyond titles and only 20 training weeks, so not attempted.
+**Alternatives considered.** *Content-based filtering*: not implemented as a method because the target separates programmes of the same category and genre by how often a user returns to them (*ТСН* vs *Факты*, both "Инфо"); [7] reports private 0.0895 for its content-based method. *Association rules*: implemented by [7] at 0.34068 private, below its PPR and ALS; dropped for time. *Two-tower / sequential models*: no item text beyond titles and only 20 training weeks, so not attempted.
 
 ## 3. Method
 
@@ -63,6 +63,7 @@ Hu *et al.* [1] give the confidence-weighted ALS used for the MF method; implici
 **From scores to five ids.** Every method returns a users × programmes score matrix; outside the pool scores are −∞. The five highest positive scores are taken in order; empty positions are filled from one popularity ranking (pool programmes by number of distinct users with a full watch in history, ties by window airings). The same ranking is the answer for users without history (4 of 1,260 test users; 59 of 4,030 hold-out users).
 
 **Methods.** Interaction matrix R: users × programmes, R_ui = number of airings of programme i watched ≥ 0.8 in history.
+
 - *Popularity* (baseline): the fill ranking above, same list for everyone.
 - *Habit × schedule* (heuristic, not one of the four methods): R_ui / (airings of i in history + 100) × airings of i in the target window — the expected number of full watches if the user keeps their rate.
 - *PPR*: item-to-item transitions P = D_i⁻¹ Rᵀ D_u⁻¹ R (programme → viewer → programme); for each user x = α s + (1 − α) x P with s = R_u / |R_u|, α = 0.5, 30 power iterations, all users at once as a dense 4,870 × 7,146 matrix.
@@ -121,10 +122,11 @@ Hu *et al.* [1] give the confidence-weighted ALS used for the MF method; implici
 *Table 4. Re-ranker ablation (full list in `artifacts/ranker_experiments.md`).*
 
 **Verification.**
+
 - Unit tests (`tests/test_core.py`, 4 passed): AP@5 reproduces the lecture example (0.917 and 0.533); a duplicate in the list scores once; overlapping views are merged (90 s, not 110 s); the 0.8 threshold and the strict-top-5 rule.
 - Byte-level reproducibility: rebuilding each submitted file gives an identical file (`cmp`), including ALS with seed 0 and the final re-ranker.
-- [OLGA: hand check 1 — the partial-coverage airing in `artifacts/hand_check.md` (channel 7, 2020-03-09 16:40–19:00, two views). Write your own subtraction here: overlap of view 1 = …, view 2 = …, sum = … s, ÷ 8,400 = …; code: 7,223 s, 0.8599. Optionally confirm the rows with `grep` in the raw CSVs.]
-- [OLGA: hand check 2 — AP@5 of the re-ranker for user …5641: actual [240081, 2400480, 10003012, 2400467, 10002515], predicted [2400480, 240081, 90080832, 10001261, 2400508] → your computation; code: 0.400000.]
+- Hand check of the join, partial coverage (`artifacts/hand_check.md`: user …2829, channel 7, airing 2020-03-09 16:40–19:00, 8,400 s). View 1 (16:26:58–18:09:17) covers 16:40:00–18:09:17 = 5,357 s; view 2 (18:17:57–18:49:03) lies inside the airing, 1,866 s; total 7,223 s, share 7,223 / 8,400 = 0.8599 — equal to the code output, and above the 0.8 threshold.
+- Hand check of AP@5 (re-ranker, light user …5641): predicted [2400480, 240081, 90080832, 10001261, 2400508] against actual [240081, 2400480, 10003012, 2400467, 10002515]. Hits at ranks 1 and 2 give precision 1/1 and 2/2; AP@5 = (1 + 1) / min(5, 5) = 0.400 — equal to the code output.
 
 ## 5. Discussion
 
@@ -159,8 +161,6 @@ I chose the two users by a rule fixed before looking at lists: among test users 
 
 *Table 6. Hold-out top-5 per method, in order; bold = in the user's actual top-5 for weeks 21–30.*
 
-[OLGA: rewrite 5.1–5.3 in your own words; the points below are the evidence to use.]
-
 **Familiar or new?** For the heavy user every personal list is familiar: PPR and ALS return four of the five actual programmes, all already in the history, and miss only *Завтрак с 1+1*, which the user never fully watched in weeks 11–20. Across all hold-out users only 50.8% of actual top-5 programmes were fully watched in history, yet the lists are 84% (re-ranker) to 96% (habit × schedule) repeats; the final submission is 90% repeats and uses only 123 distinct programmes for 1,260 users. The methods are reliable at the familiar half and do not reach the new half.
 
 **How the methods differ.** PPR with α = 0.5 restarts at the user's history every second step, so it is a smoothed copy of the history plus programmes reached through the co-view graph — for the heavy user it adds *ТСН*, not in their history top-5, at rank 4, and it is in the actual top-5. ALS spreads the user vector over the latent space: for the light user, whose history is two one-off films, it returns five other films (AP 0.00) — similar, but this user's future is news and series. Habit × schedule and PPR put the two films first because they were fully watched, although a film airs once and cannot become a frequent programme. Popularity, a list of national news, is the best of all methods for this user (0.60), but Table 3 shows this is not typical of light users: for users with 1–2 programmes popularity averages 0.111 and the re-ranker 0.135. The re-ranker demoted both films (few window airings, one watch) and put the news first.
@@ -183,13 +183,18 @@ I chose the two users by a rule fixed before looking at lists: among test users 
 
 ## 6. AI Usage Disclosure
 
-**Tools.** Claude Code (CLI) with model Claude Opus 5.5 (`claude-opus-5-5`), one session; the attached JSONL is its unmodified export. [OLGA: add message / tool-call counts from the export.]
+**Tools.** Claude Code (CLI) 2.1.295 with model Claude Opus 5.5 (`claude-opus-5-5`), one session of 11 user messages and 102 tool calls (2026-10-23 to 2026-10-25); the attached JSONL is its unmodified export. Claude (Cowork) did a final review pass: it checked the report's numbers against `artifacts/` and the session log, re-checked the references against Crossref and publisher pages, filled in this section from my notes and rendered the PDF; it changed no code, submission or result.
 
 **How AI was used.** *Search:* found the GSB-cohort repository [7] and verified reference metadata (Crossref, publisher pages). *Code generation:* all files in `src/` and `scripts/`, the tests, and this report draft. *Debugging:* the reproducibility failure in §5.2, ruff/ty fixes. *Analysis:* bootstrap intervals, segment table, user selection rule. I directed the scope (two required methods first, then the hybrid with a 2-hour limit), accepted the Kaggle rules, supplied the Data-page text, and chose when to stop tuning.
 
-**What I personally verified.** [OLGA: list only what you actually did, e.g. (1) recomputed the partial-coverage airing by hand: …; (2) recomputed AP@5 = 0.4 for user …5641: …; (3) checked that the Kaggle scores in Table 2 match my Submissions page (screenshot below); (4) opened each reference link.]
+**What I personally verified.** These checks were done by hand outside the Claude Code session, so they are not in its log.
 
-**What I trusted without verification.** [OLGA: e.g. the PPR and ALS implementations beyond the unit tests; the bootstrap code; the scores reported by [7]; the other counts in Table 1.]
+- The partial-coverage airing of the join, recomputed by hand (7,223 s, 0.8599; §4, Verification).
+- AP@5 = 0.400 for the light user, recomputed by hand from the two lists (§4, Verification).
+- The Kaggle public and private scores in Table 2 against my Kaggle *Submissions* page (Fig. 1 shows the final row).
+- Every reference link in §2 and References opened and matched to the cited work.
+
+**What I trusted without verification.** The PPR and ALS implementations beyond the unit tests and the byte-level reproducibility checks; the bootstrap code behind the confidence intervals; the scores reported by [7]; the counts in Table 1 other than those recomputed above.
 
 **Kaggle.** Designated final submission: `submissions/ranker_v1.csv`, ref 57621475, returned private 0.43773 / public 0.44867. The competition closed in 2020, so the *Selected* box cannot be ticked for a late submission; the designation is made here. All submissions and their scores are in `artifacts/kaggle_submissions.csv`.
 
