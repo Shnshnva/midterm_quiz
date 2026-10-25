@@ -191,7 +191,9 @@ I chose the two users by a rule fixed before looking at lists: among test users 
 
 **What I trusted without verification.** [OLGA: e.g. the PPR and ALS implementations beyond the unit tests; the bootstrap code; the scores reported by [7]; the other counts in Table 1.]
 
-**Kaggle.** [OLGA: screenshot of the Submissions page showing `ranker_v1.csv` with Private 0.43773 and Public 0.44867, marked Selected.] Designated final submission: `submissions/ranker_v1.csv`, ref 57621475.
+**Kaggle.** Designated final submission: `submissions/ranker_v1.csv`, ref 57621475, returned private 0.43773 / public 0.44867. The competition closed in 2020, so the *Selected* box cannot be ticked for a late submission; the designation is made here. All submissions and their scores are in `artifacts/kaggle_submissions.csv`.
+
+<figure><img src="kaggle_score.png" alt="Kaggle submission row"><figcaption>Fig. 1. Kaggle Submissions page, final submission row (screenshot 2026-10-25).</figcaption></figure>
 
 ## References
 
